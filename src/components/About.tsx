@@ -96,10 +96,10 @@ const About: React.FC = () => {
               <div className="flex -space-x-2">
                 <div className="w-12 h-12 bg-orange-400 rounded-full border-4 border-white"></div>
                 <div className="w-12 h-12 bg-red-400 rounded-full border-4 border-white"></div>
-                <div className="w-12 h-12 bg-yellow-400 rounded-full border-4 border-white"></div>
+                {/* <div className="w-12 h-12 bg-yellow-400 rounded-full border-4 border-white"></div> */}
               </div>
               <div>
-                <p className="font-semibold text-gray-800">Three Generations</p>
+                <p className="font-semibold text-gray-800">Two Generations</p>
                 <p className="text-sm text-gray-600">of spice expertise</p>
               </div>
             </div>
@@ -197,6 +197,9 @@ const About: React.FC = () => {
                 <li>• Mutton masala</li>
                 <li>• Biriyani masala</li>
                 <li>• Kitchen king masala</li>
+                <li>• Black pepper powder</li>
+                <li>• Jeera powder</li>
+                <li>• Turmeric powder</li>
               </ul>
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
@@ -206,8 +209,6 @@ const About: React.FC = () => {
               </h4>
               <ul className="space-y-2 text-white/90">
                 <li>• Turmeric powder</li>
-                <li>• Black pepper powder</li>
-                <li>• Jeera powder</li>
               </ul>
             </div>
           </div>
