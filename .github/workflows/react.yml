@@ -20,15 +20,19 @@ jobs:
           node-version: 18.x
           cache: "npm"
 
-      # Step 3: Install dependencies
-      - name: Install Dependencies
+      # Step 3: Install dependencies using npm i
+      - name: Install Dependencies with npm i
+        run: npm i
+
+      # Step 4: Install dependencies using npm ci
+      - name: Install Dependencies with npm ci
         run: npm ci
 
-      # Step 4: Build the React application
+      # Step 5: Build the React application
       - name: Build React App
         run: npm run build
 
-      # Step 5: Deploy to the main branch
+      # Step 6: Deploy to the main branch
       - name: Deploy to Main Branch
         run: |
           git config --global user.name "GitHub Actions"
