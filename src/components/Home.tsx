@@ -68,8 +68,8 @@ const Home: React.FC = () => {
 
   const stats = [
     { number: '14+', label: 'Years of Excellence' },
-    { number: '1000+', label: 'Happy Customers' },
-    { number: '100+', label: 'Premium Products' },
+    { number: '300+', label: 'Happy Customers' },
+    { number: '50+', label: 'Premium Products' },
     { number: '25+', label: 'Cities Served' }
   ];
 
