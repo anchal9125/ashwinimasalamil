@@ -1,18 +1,888 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwini Masala Mill - Premium Spices & Masalas</title>
     <meta name="description" content="Ashwini Masala Mills - Since 2011, providing premium quality spices and masalas. Authentic flavors, traditional methods, trusted by thousands of families across India.">
     <meta name="keywords" content="spices, masala, garam masala, turmeric, red chili, coriander, cumin, Indian spices, wholesale spices, premium spices">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <div class="contact-info d-flex flex-wrap">
+                        <div class="contact-item me-4">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9768048033</span>
+                        </div>
+                        <div class="contact-item me-4">
+                            <i class="fas fa-envelope"></i>
+                            <span>ashwinienterprises214@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://www.google.com/maps/place/19%C2%B005'40.9%22N+73%C2%B001'21.2%22E/@19.0946992,73.0199905,17z" target="_blank" class="text-white text-decoration-none">
+                            Navi Mumbai, Maharashtra
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="navbar-brand d-flex align-items-center">
+                    <div class="logo-icon">
+                        <span>AM</span>
+                    </div>
+                    <div class="ms-3">
+                        <h1 class="brand-title mb-0">Ashwini Masal Mill</h1>
+                        <p class="brand-subtitle mb-0">Premium Spices & Masalas</p>
+                    </div>
+                </div>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="hero-slide" style="background-image: url('quality_production.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('traditional _excellence.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('modern_grinding_technology.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('industrial_grade_equipment.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('firm.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('godown.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="hero-slide" style="background-image: url('raw_masala.jpeg');">
+                        <div class="hero-overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <h1 class="hero-title">
+                            Ashwini
+                            <span class="gradient-text">Masala Mills</span>
+                        </h1>
+                        <p class="hero-subtitle mb-4">Advanced machinery ensuring consistent quality and purity</p>
+                        <p class="hero-description mb-5">
+                            Bringing you the authentic taste of India with premium quality spices and masalas, 
+                            crafted with tradition and delivered with love.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-primary btn-lg me-3">
+                                Explore Our Products
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#about" class="btn btn-outline-light btn-lg">
+                                Learn Our Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <p class="section-subtitle">Experience the difference that comes with decades of expertise and commitment to quality</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>100% Mesh Quality</h4>
+                        <p>Premium grinding quality with 100% mesh consistency for perfect texture</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>CCTV Surveillance</h4>
+                        <p>Complete CCTV camera surveillance for security, purity and quality assurance</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h4>Job Work Services</h4>
+                        <p>Professional grinding services for masala and ayurvedic products</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Trusted Brand</h4>
+                        <p>Preferred choice of thousands of families and businesses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="stat-number">14+</h3>
+                        <p class="stat-label">Years of Excellence</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="stat-number">300+</h3>
+                        <p class="stat-label">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Premium Products</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-item">
+                        <h3 class="stat-number">25+</h3>
+                        <p class="stat-label">Cities Served</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">About Ashwini Masal Mill</h2>
+                    <p class="section-subtitle">A journey of taste, tradition, and trust spanning over five decades with modern quality assurance</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="industrial_grade_equipment.jpeg" alt="Industrial Grade Equipment" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>Our Story</h3>
+                        <p>Founded in 2011 by our patriarch, Ashwini Masal Mills began as a small family business with a simple vision: to bring the authentic taste of India to every household. What started with a traditional stone grinder and a passion for quality has grown into one of the most trusted names in the spice industry.</p>
+                        <p>Over the decades, we have maintained our commitment to traditional processing methods while embracing modern quality standards. Our spices are sourced directly from farmers across India, ensuring freshness and supporting local communities.</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="generation-icons">
+                                <div class="generation-icon orange"></div>
+                                <div class="generation-icon red"></div>
+                            </div>
+                            <div class="ms-3">
+                                <p class="mb-0 fw-bold">Two Generations</p>
+                                <small class="text-muted">of spice expertise</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quality Assurance -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>Quality Assurance & Security</h3>
+                    <p>We ensure the highest standards of quality, purity, and security through modern monitoring and processing systems</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>CCTV Camera Surveillance</h4>
+                        <p class="text-primary fw-bold">For Security and Purity</p>
+                        <ul class="quality-features">
+                            <li>Real-time monitoring of production areas</li>
+                            <li>Ensures hygiene and cleanliness</li>
+                            <li>Quality control at every step</li>
+                            <li>Complete process transparency</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Grinding Quality 100% Mesh</h4>
+                        <p class="text-primary fw-bold">Premium Processing Standards</p>
+                        <ul class="quality-features">
+                            <li>Uniform particle size distribution</li>
+                            <li>Perfect texture consistency</li>
+                            <li>Enhanced flavor release</li>
+                            <li>Professional grade output</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="quality-card">
+                        <div class="quality-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <h4>Job Work Services</h4>
+                        <p class="text-primary fw-bold">Masala and Ayurvedic Products</p>
+                        <ul class="quality-features">
+                            <li>Custom masala grinding</li>
+                            <li>Ayurvedic product processing</li>
+                            <li>Small to large batch orders</li>
+                            <li>Quality assured processing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Manufacturing Process -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>Our Manufacturing Process</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="process-card">
+                        <img src="quality_production.jpeg" alt="Grinding machinery" class="img-fluid rounded mb-3">
+                        <h4>Modern Grinding Technology</h4>
+                        <p>Our state-of-the-art grinding machinery ensures 100% mesh consistency and preserves the natural oils and flavors of spices with complete CCTV monitoring.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="process-card">
+                        <img src="traditional _excellence.jpeg" alt="Processing facility" class="img-fluid rounded mb-3">
+                        <h4>Quality Processing Facility</h4>
+                        <p>Our hygienic processing facility maintains the highest standards of cleanliness and quality control with continuous surveillance for purity assurance.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Job Work Services Highlight -->
+            <div class="job-work-section mb-5">
+                <div class="container">
+                    <div class="text-center mb-4">
+                        <h3>Professional Job Work Services</h3>
+                        <p>We are doing job work of masala and ayurvedic products with guaranteed quality and complete monitoring</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="job-work-card">
+                                <h4><i class="fas fa-cog me-2"></i>Masala Products</h4>
+                                <ul>
+                                    <li>Chilli powder</li>
+                                    <li>Coriander powder</li>
+                                    <li>Garam masala powder</li>
+                                    <li>Ghati masala</li>
+                                    <li>Malwani fish masala</li>
+                                    <li>Chicken masala</li>
+                                    <li>Mutton masala</li>
+                                    <li>Biriyani masala</li>
+                                    <li>Kitchen king masala</li>
+                                    <li>Black pepper powder</li>
+                                    <li>Jeera powder</li>
+                                    <li>Turmeric powder</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="job-work-card">
+                                <h4><i class="fas fa-leaf me-2"></i>Ayurvedic Products</h4>
+                                <ul>
+                                    <li>Turmeric powder</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mission & Vision -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mission-card">
+                        <h3>Our Mission</h3>
+                        <p>To preserve and share the authentic flavors of Indian cuisine by providing the highest quality spices and masalas with modern quality assurance, CCTV surveillance for purity, and professional job work services while supporting sustainable farming practices.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="vision-card">
+                        <h3>Our Vision</h3>
+                        <p>To become the most trusted and beloved spice brand in India and beyond, known for our unwavering commitment to quality, security, transparency through CCTV monitoring, and customer satisfaction, while expanding our reach to spice lovers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive spice solutions with quality assurance and professional job work services</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Premium Spice Blending</h3>
+                            <p>Custom spice blends crafted to your specific requirements and taste preferences.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle text-success"></i> Custom formulations</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Small to large batches</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Recipe consultation</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Quality testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cog"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Job Work Services</h3>
+                            <p>Professional grinding and processing services for masala and ayurvedic products.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle text-success"></i> Masala grinding</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Ayurvedic products</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Custom processing</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Bulk orders</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Wholesale Distribution</h3>
+                            <p>Reliable supply chain solutions for retailers and restaurants across India.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle text-success"></i> Bulk ordering</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Competitive pricing</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Timely delivery</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Flexible payment terms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Quality Assurance</h3>
+                            <p>Rigorous quality control with CCTV surveillance and 100% mesh grinding quality.</p>
+                            <ul class="service-features">
+                                <li><i class="fas fa-check-circle text-success"></i> CCTV monitoring</li>
+                                <li><i class="fas fa-check-circle text-success"></i> 100% mesh quality</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Purity certification</li>
+                                <li><i class="fas fa-check-circle text-success"></i> Traceability</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Products Section -->
+            <div class="row mb-5">
+                <div class="col-12 text-center mb-4">
+                    <h3>Our Premium Products</h3>
+                    <p>Discover our wide range of authentic spices and masalas, each crafted with care and tradition all products are premium</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/garam-masala.jpg" alt="Garam Masala" class="product-image">
+                        <div class="product-content">
+                            <h4>Garam Masala</h4>
+                            <p>Our signature blend of aromatic spices</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/turmeric-powder.jpg" alt="Turmeric Powder" class="product-image">
+                        <div class="product-content">
+                            <h4>Turmeric Powder</h4>
+                            <p>Pure, high-quality turmeric from farms</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/red-chili-powder.jpg" alt="Red Chili Powder" class="product-image">
+                        <div class="product-content">
+                            <h4>Red Chili Powder</h4>
+                            <p>Vibrant color and perfect heat level</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/coriander-powder.jpg" alt="Coriander Powder" class="product-image">
+                        <div class="product-content">
+                            <h4>Coriander Powder</h4>
+                            <p>Freshly ground coriander seeds</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/jeera-powder.jpg" alt="Jeera Powder" class="product-image">
+                        <div class="product-content">
+                            <h4>Jeera Powder</h4>
+                            <p>Freshly ground Jeera Powder</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="product-card">
+                        <img src="products/biryani-masala.jpg" alt="Biryani Masala" class="product-image">
+                        <div class="product-content">
+                            <h4>Biryani Masala</h4>
+                            <p>Perfect blend for authentic biryani</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="service-cta">
+                <div class="text-center">
+                    <h3>Ready to Experience Premium Quality?</h3>
+                    <p>Get in touch with us to discuss your spice requirements, job work needs, or discover how we can enhance your culinary journey.</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn btn-light btn-lg me-3">Request Quote</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">Job Work Inquiry</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">We'd love to hear from you. Contact us for any inquiries, orders, or collaborations.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="contact-form-card">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <div id="success-message" class="alert alert-success d-none">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Thank you! Your message has been sent successfully.
+                        </div>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <select class="form-select" id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="product-inquiry">Product Inquiry</option>
+                                        <option value="wholesale-order">Wholesale Order</option>
+                                        <option value="custom-blend">Custom Blend Request</option>
+                                        <option value="general-inquiry">General Inquiry</option>
+                                        <option value="support">Customer Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="6" required placeholder="Please share your requirements, questions, or any specific details..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Our Location</h4>
+                                <p>Plot No. A-144/2, TTC Industrial Area,<br>
+                                Opp. Navi Mumbai Police Centre,<br>
+                                Khairane MIDC, Kopar Khairane,<br>
+                                Navi Mumbai - 400 705</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone Numbers</h4>
+                                <p>Aditya: +91 8286868601<br>
+                                Aditya: +91 9768048033<br>
+                                Vinod: +91 9768211324</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email Address</h4>
+                                <p>ashwinienterprises214@gmail.com<br>
+                                info@ashwinimasalmills.com<br>
+                                sales@ashwinimasalmills.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-card mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday: 8:00 AM - 7:00 PM<br>
+                                Closed on Sunday & Public Holidays</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Key Persons -->
+                        <div class="key-contacts">
+                            <h4 class="mb-3">Key Contacts</h4>
+                            <div class="key-person mb-3">
+                                <div class="person-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="person-details">
+                                    <h5>Aditya</h5>
+                                    <p class="mb-1">Business Development</p>
+                                    <p class="mb-0">📞 +91 8286868601</p>
+                                    <p class="text-success">📱 WhatsApp: +91 9768048033</p>
+                                </div>
+                            </div>
+                            <div class="key-person">
+                                <div class="person-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="person-details">
+                                    <h5>Vinod</h5>
+                                    <p class="mb-1">Operations Manager</p>
+                                    <p class="mb-0">📞 +91 9768211324</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map -->
+                        <div class="map-container mt-4">
+                            <h4 class="mb-3">Find Us</h4>
+                            <div class="map-frame">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.949788830768!2d73.0199905!3d19.0946992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0c6b7c7c7c7%3A0x0!2zMTnCsDA1JzQwLjkiTiA3M8KwMDEnMjEuMiJF!5e0!3m2!1sen!2sin!4v1697031234567!5m2!1sen!2sin"
+                                    width="100%"
+                                    height="200"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional CTA -->
+            <div class="contact-cta mt-5">
+                <div class="text-center">
+                    <h3>Ready to Start Your Spice Journey?</h3>
+                    <p>Join thousands of satisfied customers who trust Ashwini Masal Mill for their spice needs.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+919768048033" class="btn btn-light btn-lg me-3">
+                            Call Now: +91 9768048033
+                        </a>
+                        <a href="https://wa.me/919768048033" target="_blank" class="btn btn-outline-light btn-lg">
+                            WhatsApp Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="footer-logo">
+                                <span>AM</span>
+                            </div>
+                            <div class="ms-3">
+                                <h3>Ashwini Masal Mill</h3>
+                                <p class="mb-0">Premium Spices & Masalas</p>
+                            </div>
+                        </div>
+                        <p class="footer-description">
+                            Since 2011, we've been committed to bringing you the finest quality spices and masalas, 
+                            preserving traditional flavors while embracing modern quality standards.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h4 class="footer-title">Our Products</h4>
+                    <ul class="footer-links">
+                        <li><span>Garam Masala</span></li>
+                        <li><span>Turmeric Powder</span></li>
+                        <li><span>Red Chili Powder</span></li>
+                        <li><span>Coriander Powder</span></li>
+                        <li><span>Cumin Powder</span></li>
+                        <li><span>Biryani Masala</span></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt text-primary"></i>
+                            <div>
+                                <p class="mb-0">Plot No. A-144/2, TTC Industrial Area</p>
+                                <p class="mb-0">Opp. Navi Mumbai Police Centre</p>
+                                <p class="mb-0">Khairane MIDC, Kopar Khairane</p>
+                                <p class="mb-0">Navi Mumbai - 400 705</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone text-primary"></i>
+                            <div>
+                                <p class="mb-0">+91 9768048033</p>
+                                <p class="mb-0">+91 9768211324</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope text-primary"></i>
+                            <div>
+                                <p class="mb-0">ashwinienterprises214@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="text-center">
+                    <p>&copy; <span id="currentYear"></span> Ashwini Masal Mill. All rights reserved. | Crafted with love for authentic flavors.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
 </html>
